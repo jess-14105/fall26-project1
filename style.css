@@ -1,1 +1,40 @@
 /* your styles will go here!! */
+
+/* COLORS */
+
+:root {
+    --pink: #F2CFD0;
+}
+
+.title {
+    font-size: 48px;
+}
+
+body {
+    background: #1F1627;
+    color: var(--pink);
+}
+
+h1 {
+    color: var(--pink);
+    font-size: 36px;
+}
+
+h2 {
+    color: var(--pink);
+    font-size: 24px;
+}
+
+h3 {
+    color: var(--pink);
+    font-size: 18px;
+}
+
+#nav-logo {
+    width: 50px;
+}
+
+img {
+    max-width: 100%;
+}
+
