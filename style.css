@@ -4,6 +4,7 @@
 
 :root {
     --pink: #F2CFD0;
+    --purple: #C7B8DA;
 }
 
 .title {
@@ -38,3 +39,6 @@ img {
     max-width: 100%;
 }
 
+a {
+    color: (--purple);
+}
