@@ -34,6 +34,16 @@ h3 {
     font-size: 18px;
 }
 
+a {
+    color: var(--purple);
+    text-decoration: none;
+
+}
+
+a:hover {
+    text-decoration: underline;
+    color: whitesmoke;
+}
 
 img {
     max-width: 100%;
