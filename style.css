@@ -1,4 +1,28 @@
 /* your styles will go here!! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+* {
+    box-sizing: border-box;
+}
 
 /* COLORS */
 
@@ -9,11 +33,14 @@
 
 .title {
     font-size: 48px;
+    text-align: center;
 }
 
 body {
     background: #1F1627;
     color: var(--pink);
+    margin: 0, auto;
+    padding: 0, 0.5rem;
 }
 
 h1 {
@@ -39,6 +66,7 @@ img {
     max-width: 100%;
 }
 
-a {
-    color: (--purple);
+header {
+    position: fixed;
+    margin: 10px;
 }
