@@ -11,6 +11,8 @@
     --purple: #C7B8DA;
 }
 
+/* FONTS */
+
 body {
     background: #1F1627;
     color: var(--pink);
@@ -22,21 +24,37 @@ body {
 h1 {
     color: var(--pink);
     font-size: 36px;
+    font-family: "rl-folklor", sans-serif;
+    font-weight: 900;
+    font-style: normal;
 }
 
 h2 {
-    color: var(--pink);
+    color: var(--purple);
     font-size: 24px;
+    font-family: "bookman-jf-pro", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 h3 {
-    color: var(--pink);
+    color: var(--purple);
     font-size: 18px;
+}
+
+p {
+    font-family: "bookman-jf-pro", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: 30px;
 }
 
 a {
     color: var(--purple);
     text-decoration: none;
+    font-family: "bookman-jf-pro", serif;
+    font-weight: 400;
+    font-style: normal;
 
 }
 
@@ -61,8 +79,12 @@ main {
     margin-top: 100px;
 }
 
+footer {
+    color: var(--purple);
+}
+
 .title {
-    font-size: 48px;
+    font-size: 60px;
     text-align: center;
 }
 
