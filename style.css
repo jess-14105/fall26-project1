@@ -106,3 +106,7 @@ footer {
     align-items: center;
     margin-left: auto;
 }
+
+.source-links {
+    color: var(--pink);
+}
