@@ -110,3 +110,9 @@ footer {
 .source-links {
     color: var(--pink);
 }
+
+.home-images {
+    display: flex;
+    width: 100px;
+    /* flex layout, then @media for mobile */
+}
