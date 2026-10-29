@@ -16,9 +16,6 @@
 body {
     background: #1F1627;
     color: var(--pink);
-    width: 600px;
-    min-width: 300px;
-    max-width: 700px;
 }
 
 h1 {
@@ -112,26 +109,3 @@ footer {
 }
 
  /* flex layout, then @media for mobile */
-.image-container {
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-}
-
-.bg-image {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.overlay-link {
-    color: #1F1627;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 550%)
-}
-
-#flex {
-    display: flex;
-}
