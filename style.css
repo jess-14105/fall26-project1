@@ -125,13 +125,13 @@ footer {
 }
 
 .overlay-link {
+    color: #1F1627;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, 550%)
 }
 
-.overlay-link:hover {
-    text-decoration: underline;
-    color: whitesmoke;
+#flex {
+    display: flex;
 }
