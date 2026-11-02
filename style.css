@@ -55,6 +55,8 @@ a {
     font-family: "bookman-jf-pro", serif;
     font-weight: 400;
     font-style: normal;
+    transition-property: color;
+    transition-duration: 650ms;
 
 }
 
@@ -109,6 +111,7 @@ footer {
 
 .scimage {
     width: 100%;
+    max-width: 1000px;
 }
 
 .ptext {
@@ -122,4 +125,16 @@ footer {
     font-size: 14px;
 }
 
+.home-images {
+    display: flex;
+    margin: 100px;
+}
+
+.home-image {
+    transition: max-height 200ms ease;
+}
+
+.home-image:hover {
+    max-height: 50px;
+}
  /* flex layout, then @media for mobile */
