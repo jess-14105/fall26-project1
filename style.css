@@ -32,6 +32,7 @@ h2 {
     font-family: "bookman-jf-pro", serif;
     font-weight: 400;
     font-style: normal;
+    margin-left: 100px;
 }
 
 h3 {
@@ -44,6 +45,8 @@ p {
     font-weight: 400;
     font-style: normal;
     padding-bottom: 30px;
+    margin-left: 100px;
+    max-width: 50%;
 }
 
 a {
@@ -81,7 +84,7 @@ footer {
 }
 
 .title {
-    font-size: 60px;
+    font-size: 80px;
     text-align: center;
 }
 
@@ -104,8 +107,19 @@ footer {
     margin-left: auto;
 }
 
+.scimage {
+    width: 100%;
+}
+
+.ptext {
+    margin-top: 100px;
+}
+
 .source-links {
     color: var(--pink);
+}
+.footer {
+    font-size: 14px;
 }
 
  /* flex layout, then @media for mobile */
