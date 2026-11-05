@@ -18,6 +18,16 @@ body {
     color: var(--pink);
 }
 
+#container {
+    width: 60%;
+    margin-left: 10%;
+    align-content: center;
+}
+
+    #id {
+    width: 60%;
+}
+
 h1 {
     color: var(--pink);
     font-size: 36px;
@@ -32,7 +42,6 @@ h2 {
     font-family: "bookman-jf-pro", serif;
     font-weight: 400;
     font-style: normal;
-    margin-left: 100px;
 }
 
 h3 {
@@ -45,8 +54,8 @@ p {
     font-weight: 400;
     font-style: normal;
     padding-bottom: 30px;
-    margin-left: 100px;
-    max-width: 50%;
+    min-width: 300px;
+    max-width: 800px;
 }
 
 a {
@@ -127,14 +136,23 @@ footer {
 
 .home-images {
     display: flex;
-    margin: 100px;
+    width: 100%;
 }
 
 .home-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
     transition: max-height 200ms ease;
 }
 
 .home-image:hover {
-    max-height: 50px;
+    max-height: 120%;
 }
  /* flex layout, then @media for mobile */
+
+@media only screen and (max-width: 480px) {
+    p {
+        font-size: 12px;
+    }
+}
