@@ -143,11 +143,13 @@ footer {
     max-width: 100%;
     height: auto;
     display: block;
-    transition: max-height 200ms ease;
+     transition: transform 400ms ease-out, opacity 175ms ease-in-out;
 }
 
-.home-image:hover {
-    max-height: 120%;
+.home-image:hover, 
+.home-image:focus {
+    transform: scale(1.03);
+  opacity: 0.9;
 }
  /* flex layout, then @media for mobile */
 
