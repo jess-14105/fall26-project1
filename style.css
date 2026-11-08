@@ -34,6 +34,7 @@ h1 {
     font-family: "rl-folklor", sans-serif;
     font-weight: 900;
     font-style: normal;
+    text-align: center;
 }
 
 h2 {
@@ -46,7 +47,10 @@ h2 {
 
 h3 {
     color: var(--purple);
-    font-size: 18px;
+    font-size: 20px;
+    font-family: "bookman-jf-pro", serif;
+    font-weight: 400;
+    font-style: italic;
 }
 
 p {
