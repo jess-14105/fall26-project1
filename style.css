@@ -9,13 +9,14 @@
 :root {
     --pink: #F2CFD0;
     --purple: #C7B8DA;
+    --darkpurple: #1F1627;
 }
 
 /* FONTS */
 
 body {
     color: var(--pink);
-    background-color: #1F1627;
+    background-color: var(--darkpurple);
     
 }
 
@@ -91,7 +92,7 @@ header {
     position: fixed;
     width: 100%;
     padding: 20px, 0;
-    background-color: #1F1627;
+    background-color: var(--darkpurple);
     top: 0;
 }
 
@@ -140,6 +141,10 @@ footer {
     margin-top: 40%;
 }
 
+.drop-shadow {
+    text-shadow: 1px 1px 2px var(--darkpurple);
+}
+
 .ptext {
     margin-top: 15%;
     max-width: 100%;
@@ -171,6 +176,24 @@ footer {
     transform: scale(1.03);
   opacity: 0.9;
 }
+
+/* equipment */
+
+.background-image-equipment {
+    background-image: url(equipmentwebpage.png);
+    background-repeat: no-repeat;
+    background-position: right 8%;
+    background-origin: content-box;
+    background-size: 60%;
+}
+
+#equipment-text {
+    margin-top: 15%;
+    max-width: 75%;
+    align-items: left;
+    text-shadow: 1px 1px 2px var(--darkpurple);
+}
+
  /* flex layout, then @media for mobile */
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
