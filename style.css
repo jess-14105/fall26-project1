@@ -16,17 +16,21 @@
 body {
     color: var(--pink);
     background-color: #1F1627;
+    
+}
+
+.background-image-home {
     background-image: url(samandcolby.png);
     background-repeat: no-repeat;
-    background-position: right 75px;
+    background-position: right 50%;
     background-origin: content-box;
-    background-size: 50%;
+    background-size: 60%;
 }
 
 #container {
     max-width: 50%;
     margin: 0 auto;
-    padding: 50px, 0;
+    padding: 0, 100px, 0;
 }
 
 h1 {
@@ -97,6 +101,15 @@ main {
 
 footer {
     color: var(--purple);
+    background-color: #1F1627;
+}
+
+.footer {
+    max-width: 100%;
+    padding: 100px 0 50px;
+    font-size: 14px;
+    text-align: center;
+    justify-content: center;
 }
 
 .title {
@@ -124,19 +137,17 @@ footer {
 }
 
 .about {
-    margin-top: 50%;
+    margin-top: 40%;
 }
 
 .ptext {
-    margin-top: 100px;
-    max-width: 65%;
+    margin-top: 15%;
+    max-width: 100%;
+    align-items: center;
 }
 
 .source-links {
     color: var(--pink);
-}
-.footer {
-    font-size: 14px;
 }
 
 .home-images {
