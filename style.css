@@ -14,18 +14,18 @@
 /* FONTS */
 
 body {
-    background: #1F1627;
     color: var(--pink);
+    background-color: #1F1627;
+    background-image: url(samandcolby.png);
+    background-repeat: no-repeat;
+    background-position: right 75px;
+    background-origin: content-box;
+    background-size: 50%;
 }
 
 #container {
-    width: 60%;
-    margin-left: 10%;
-    align-content: center;
-}
-
-    #content {
-    width: 80%;
+    max-width: 50%;
+    margin: 0 auto;
 }
 
 h1 {
@@ -122,13 +122,13 @@ footer {
     margin-left: auto;
 }
 
-.scimage {
-    width: 100%;
-    max-width: 1000px;
+.about {
+    margin-top: 50%;
 }
 
 .ptext {
     margin-top: 100px;
+    max-width: 65%;
 }
 
 .source-links {
@@ -140,7 +140,10 @@ footer {
 
 .home-images {
     display: flex;
-    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .home-image {
