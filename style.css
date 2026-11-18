@@ -11,13 +11,14 @@
     --purple: #C7B8DA;
     --darkpurple: #1F1627;
     --red: #EF5757;
+    --orange: #EF8557;
 }
 
 /* FONTS */
 
 
 body {
-    color: var(--pink);
+    color: var(--purple);
     background-color: var(--darkpurple);
     
 }
@@ -28,6 +29,7 @@ body {
     background-position: right 50%;
     background-origin: content-box;
     background-size: 60%;
+    min-width: 100%;
 }
 
 #container {
@@ -37,30 +39,36 @@ body {
 }
 
 h1 {
-    color: var(--pink);
-    font-size: 36px;
+    color: var(--orange);
+    font-size: 48px;
     text-align: center;
     font-family: "Azeret Mono", monospace;
      font-optical-sizing: auto;
      font-weight: 900;
      font-style: normal;
-     letter-spacing: 10px;
+     margin: 75px;
 }
 
 h2 {
-    color: var(--purple);
+    color: var(--orange);
     font-size: 24px;
-    font-family: "bookman-jf-pro", serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: "Azeret Mono", monospace;
+     font-optical-sizing: auto;
+     font-weight: 700;
+     font-style: normal;
+    letter-spacing: 5px;
+    margin-top: 20px;
+    margin-bottom: 5px;
 }
 
 h3 {
     color: var(--purple);
     font-size: 20px;
-    font-family: "bookman-jf-pro", serif;
-    font-weight: 400;
+     font-family: "Azeret Mono", monospace;
+     font-optical-sizing: auto;
+     font-weight: 600;
     font-style: italic;
+    margin-bottom: 5px;
 }
 
 p {
@@ -120,6 +128,7 @@ footer {
 .title {
     font-size: 80px;
     text-align: center;
+    letter-spacing: 10px;
 }
 
 .navigation {
@@ -156,7 +165,7 @@ footer {
 }
 
 .source-links {
-    color: var(--pink);
+    color: var(--purple);
 }
 
 .home-images {
@@ -224,6 +233,16 @@ footer {
 }
 
 
+#s-container {
+     max-width: 50%;
+    margin: 0 auto;
+    padding: 0, 100px, 0;
+    text-align: center;
+}
+
+.source-section {
+    margin-bottom: 50px;
+}
 
  /* flex layout, then @media for mobile */
 
