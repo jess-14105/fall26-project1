@@ -4,6 +4,7 @@
     padding: 0;
 }
 
+
 /* COLORS */
 
 :root {
@@ -14,8 +15,8 @@
     --orange: #EF8557;
 }
 
-/* FONTS */
 
+/* GLOBAL STYLES */
 
 body {
     color: var(--purple);
@@ -23,20 +24,15 @@ body {
     
 }
 
-.background-image-home {
-    background-image: url(samandcolby.png);
-    background-repeat: no-repeat;
-    background-position: right 50%;
-    background-origin: content-box;
-    background-size: 60%;
-    min-width: 100%;
+main {
+    margin-top: 100px;
 }
 
-#container {
-    max-width: 50%;
-    margin: 0 auto;
-    padding: 0, 100px, 0;
+img {
+    max-width: 100%;
 }
+
+/* TYPOGRAPHY */
 
 h1 {
     color: var(--orange);
@@ -96,9 +92,7 @@ a:hover {
     color: whitesmoke;
 }
 
-img {
-    max-width: 100%;
-}
+/* HEADING */
 
 header {
     position: fixed;
@@ -106,29 +100,6 @@ header {
     padding: 20px, 0;
     background-color: var(--darkpurple);
     top: 0;
-}
-
-main {
-    margin-top: 100px;
-}
-
-footer {
-    color: var(--purple);
-    background-color: #1F1627;
-}
-
-.footer {
-    max-width: 50%;
-    margin: 0 auto;
-    margin-top: 100px;
-    padding: 0, 100px, 0;
-    text-align: center;
-}
-
-.title {
-    font-size: 80px;
-    text-align: center;
-    letter-spacing: 10px;
 }
 
 .navigation {
@@ -150,6 +121,47 @@ footer {
     margin-left: auto;
 }
 
+
+/* FOOTER */
+
+footer {
+    color: var(--purple);
+    background-color: #1F1627;
+}
+
+.footer {
+    max-width: 50%;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 0, 100px, 0;
+    text-align: center;
+}
+
+
+/* HOMEPAGE */
+
+.background-image-home {
+    background-image: url(samandcolby.png);
+    background-repeat: no-repeat;
+    background-position: right 50%;
+    background-origin: content-box;
+    background-size: 60%;
+    min-width: 100%;
+}
+
+#container {
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 0, 100px, 0;
+}
+
+.title {
+    font-size: 80px;
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+
 .about {
     margin-top: 40%;
 }
@@ -162,10 +174,6 @@ footer {
     margin-top: 15%;
     max-width: 100%;
     align-items: center;
-}
-
-.source-links {
-    color: var(--purple);
 }
 
 .home-images {
@@ -190,7 +198,8 @@ footer {
   opacity: 0.9;
 }
 
-/* equipment */
+
+/* EQUIPMENT */
 
 #eq-container {
     max-width: 50%;
@@ -233,6 +242,8 @@ footer {
 }
 
 
+/* SOURCES */
+
 #s-container {
      max-width: 50%;
     margin: 0 auto;
@@ -243,6 +254,11 @@ footer {
 .source-section {
     margin-bottom: 50px;
 }
+
+.source-links {
+    color: var(--purple);
+}
+
 
  /* flex layout, then @media for mobile */
 
