@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
  <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="nav.css">
 </head>
 
 <body class="background-image-home">
@@ -18,11 +19,11 @@
         <img src="xplr.png" alt="Home" id="nav-logo"></a>
     </nav>
     <div>
-        <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Open navigation menu">
+            <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Open navigation menu">
                 <span class="icon" aria-hidden="true">☰</span>
-        </button>
-        <nav>
-            <ul class="navigation">
+            </button>
+        <nav class="main-nav">
+            <ul id="nav-links" class="main-nav" aria-expanded="false">
                 <li><a href="equipment.html">equipment</a></li>
                 <li><a href="locations.html">locations</a></li>
                 <li><a href="sources.html">sources</a></li>
