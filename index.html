@@ -6,10 +6,9 @@
     <title>XPLR New York: Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.typekit.net/skv1gve.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="background-image-home">
@@ -18,13 +17,18 @@
     <a href="index.html">
         <img src="xplr.png" alt="Home" id="nav-logo"></a>
     </nav>
-    <nav>
-        <ul class="navigation">
-            <li><a href="equipment.html">equipment</a></li>
-            <li><a href="locations.html">locations</a></li>
-            <li><a href="sources.html">sources</a></li>
-        </ul>
-    </nav>
+    <div>
+        <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Open navigation menu">
+                <span class="icon" aria-hidden="true">☰</span>
+        </button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="equipment.html">equipment</a></li>
+                <li><a href="locations.html">locations</a></li>
+                <li><a href="sources.html">sources</a></li>
+            </ul>
+        </nav>
+    </div>
     </header>
 
     <main>
