@@ -53,6 +53,7 @@ h2 {
     letter-spacing: 5px;
     margin-top: 20px;
     margin-bottom: 5px;
+    text-shadow: 1px 1px 2px var(--darkpurple);
 }
 
 h3 {
@@ -106,6 +107,26 @@ footer {
 
 /* HOMEPAGE */
 
+.demo-gradient {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.title, h1 {
+  background: linear-gradient(90deg, #EF8557, #EF5757, #9466d1, #C7B8DA, #fa9999, #EF8557);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: demo-gradient-shine 4s linear infinite;
+}
+
+@keyframes demo-gradient-shine {
+  to { background-position: 200% center; }
+}
+
+
 .background-image-home {
     background-image: url(samandcolby.png);
     background-repeat: no-repeat;
@@ -124,7 +145,6 @@ footer {
 
 .title {
     font-size: 80px;
-    text-align: center;
     letter-spacing: 10px;
 }
 
@@ -136,7 +156,7 @@ footer {
 .home-images {
     display: flex;
     max-width: 80%;
-    margin: 100px auto;
+    margin: 50px auto;
     justify-content: center;
     align-items: center;
     padding-top: 100px;
@@ -146,15 +166,54 @@ footer {
     max-width: 100%;
     height: auto;
     display: grid;
-    transition: transform 400ms ease-out, opacity 175ms ease-in-out;
+    transition: transform 400ms ease-out, opacity 175ms ease-out;
 }
 
 .home-image:hover, 
 .home-image:focus {
     transform: scale(1.03);
-    opacity: 0.9;
+    opacity: 0.7;
 }
 
+
+.marquee-container {
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+  margin-bottom: 50px;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  flex-shrink: 0;
+  animation: scroll-left 25s linear infinite;
+}
+
+.marquee-track span {
+  padding-right: 2rem; /* Adds spacing between repeated phrases */
+  font-size: 30px;
+  font-family: "Azeret Mono", monospace;
+    font-optical-sizing: auto;
+    color: var(--orange);
+    word-spacing: 30px;
+    font-weight: 800;
+
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Optional: Pause when the user hovers over the text */
+.marquee-container:hover .marquee-track {
+  animation-play-state: paused;
+}
 
 /* EQUIPMENT */
 
