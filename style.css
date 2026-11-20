@@ -223,12 +223,18 @@ footer {
     margin: 0 auto;
     padding: 40px;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
 .merch-images img {
     max-width: 19%;
+    height: auto;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.merch-image {
+    max-width: 100%;
     height: auto;
 }
 
@@ -248,40 +254,57 @@ footer {
     color: var(--purple);
 }
 
+
+
 /* EQUIPMENT */
 
 #eq-container {
-    max-width: 50%;
+    max-width: 80%;
     margin: 0 auto;
     padding: 0, 100px, 0;
     display: block;
 }
 
 .background-image-equipment {
-    background-image: url(equipmentwebpage.png);
+    background-image: url(equipment-image.png);
     background-repeat: no-repeat;
-    background-position: right 8%;
+    background-position: right 4%;
     background-origin: content-box;
-    background-size: 60%;
+    background-size: 50%;
 }
 
-#equipment-text {
+#left-box {
     margin-top: 15%;
-    max-width: 75%;
+    max-width: 60%;
     align-items: left;
-    text-shadow: 1px 1px 2px var(--darkpurple);
+}
+
+#right-box {
+    margin-top: 15%;
+    max-width: 60%;
+    margin-left: auto;
+}
+
+.emf-flex-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .emfimage {
     max-width: 10%;
     height: auto;
-    margin: 20px;
 }
 
 .sb-image {
     max-width: 10%;
     height: auto;
-    margin: 20px;
+}
+
+.sb-flex-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .rp-image {
@@ -309,6 +332,24 @@ footer {
 }
 
 
+
+/* LOCATIONS */
+
+.background-image-locations {
+    background-image: url(catskills.png);
+    background-repeat: no-repeat;
+    background-position: right 1%;
+    background-origin: content-box;
+    background-size: 60%;
+}
+
+.youtube {
+    width: 100%;
+    margin: 50px 0;
+}
+
+
+
  /* flex layout, then @media for mobile */
 
 @media only screen and (max-width: 700px) {
@@ -322,5 +363,11 @@ footer {
 
     .home-images {
     flex-direction: column;
+  }
+
+  .merch-images {
+    flex-direction: column;
+    display: grid;
+    justify-content: center;
   }
 }
