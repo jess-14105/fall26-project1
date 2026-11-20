@@ -101,7 +101,9 @@ h2, h3 {
 footer {
     color: var(--purple);
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
+    padding-top: 100px;
+    padding-left: 20px;
 }
 
 
@@ -130,7 +132,7 @@ footer {
 .background-image-home {
     background-image: url(samandcolby.png);
     background-repeat: no-repeat;
-    background-position: right 300px;
+    background-position: right 200px;
     background-origin: content-box;
     background-size: contain;
     width: 100%;
@@ -180,7 +182,8 @@ footer {
   overflow: hidden;
   width: 100%;
   white-space: nowrap;
-  margin-bottom: 50px;
+  background-color: var(--orange);
+  padding: 15px;
 }
 
 .marquee-track {
@@ -195,7 +198,7 @@ footer {
   font-size: 30px;
   font-family: "Azeret Mono", monospace;
     font-optical-sizing: auto;
-    color: var(--orange);
+    color: var(--darkpurple);
     word-spacing: 30px;
     font-weight: 800;
 
@@ -210,9 +213,39 @@ footer {
   }
 }
 
-/* Optional: Pause when the user hovers over the text */
 .marquee-container:hover .marquee-track {
   animation-play-state: paused;
+}
+
+.merch-container {
+    background-color: var(--purple);
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.merch-images img {
+    max-width: 19%;
+    height: auto;
+}
+
+.merch-button {
+    display: inline-block;
+    background-color: var(--purple);
+    color: var(--darkpurple);
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: 2px solid var(--purple);
+    border-radius: 50px;
+    transition: background-color 450ms ease, color 450ms ease;
+}
+
+.merch-button:hover {
+    background-color: var(--darkpurple);
+    color: var(--purple);
 }
 
 /* EQUIPMENT */
