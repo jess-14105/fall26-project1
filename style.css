@@ -132,7 +132,7 @@ footer {
 .background-image-home {
     background-image: 
         url(samandcolby.png),
-        linear-gradient( 135deg, var(--darkpurple), #181626, #231134, #12153f);
+        linear-gradient( 135deg, var(--darkpurple), #241833, #2d1f42);
     background-repeat: 
         no-repeat, 
         no-repeat;
@@ -279,7 +279,7 @@ footer {
 
 .background-image-equipment {
     background-image: url(equipment.png),
-    linear-gradient( 135deg, var(--darkpurple), #181626, #231134, #12153f);
+    linear-gradient( 135deg, var(--darkpurple), #241833, #2d1f42);
     background-repeat: no-repeat;
     background-position: right 3%, center;
     background-origin: content-box, padding-box;
@@ -361,13 +361,16 @@ footer {
     max-width: 50%;
     margin: 0 auto;
     padding: 0, 100px, 0;
-    text-align: center;
+}
+
+.s-space {
+    margin-top: 50px;
 }
 
 .background-image-eq {
     background-image: 
-        url(sources.png),
-        linear-gradient( 135deg, var(--darkpurple), #181626, #231134, #12153f);
+        url(),
+        linear-gradient( 135deg, var(--darkpurple), #241833, #2d1f42);
     background-repeat: no-repeat;
     background-position: right 40px, center;
     background-size: 50%, cover;
@@ -392,7 +395,7 @@ footer {
         url(locations-kreischer.png),
         url(locations-saratoga.png),
         url(locations-shanley.png),
-        linear-gradient( 135deg, var(--darkpurple), #181626, #231134, #12153f);
+        linear-gradient( 135deg, var(--darkpurple), #241833, #2d1f42);
     background-repeat: 
         no-repeat,
         no-repeat,
@@ -445,8 +448,8 @@ footer {
         font-size: 12px;
     }
 
-    .home-image {
-        width: 90%;
+    img {
+        width: 100%;
     }
 
     .home-images {
@@ -462,4 +465,5 @@ footer {
   .rp-flex-images {
     flex-direction: column;
   }
+
 }
