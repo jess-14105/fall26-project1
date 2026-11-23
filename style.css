@@ -440,7 +440,6 @@ footer {
 }
 
 
-
  /* flex layout, then @media for mobile */
 
 @media only screen and (max-width: 700px) {
@@ -452,9 +451,22 @@ footer {
         width: 100%;
     }
 
+    footer {
+        text-align: center;
+    }
+
     .home-images {
     flex-direction: column;
   }
+
+    .title {
+        font-size: 60px;
+    }
+
+    .background-image-home {
+        background-position: right 250px, center;
+        background-size: 450px, cover;
+    }
 
   .merch-images {
     flex-direction: column;
@@ -462,8 +474,80 @@ footer {
     justify-content: center;
   }
 
-  .rp-flex-images {
+  .merch-image {
+    min-width: 200px;
+  }
+
+  .marquee-track span {
+    font-size: 24px;
+  }
+
+  .background-image-equipment {
+    background-size: 500px;
+  }
+
+  #right-box {
+    margin: 0 auto;
+    align-items: left;
+  }
+
+  #left-box {
+    margin: 0 auto;
+    align-items: left;
+  }
+
+  .emfimage {
+    min-width: 300px;
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 210px;
+
+  }
+
+  .emf-flex-image {
+    align-items: center;
+    display: flex;
     flex-direction: column;
   }
 
+  .sb-image {
+    min-width: 200px;
+    position: absolute;
+    z-index: -1;
+    top: 20px;
+    left: 0px;
+  }
+
+  .sb-flex-image {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .estes-image {
+    min-width: 300px;
+    position: absolute;
+    z-index: -1;
+    left: 0px;
+    top: 500px;
+  }
+
+  .rp-image {
+    min-width: 200px;
+    position: absolute;
+    z-index: -1;
+    left: 250px;
+    top: 5px;
+
+  }
+
+  .background-image-locations {
+    background-size: 100%;
+    background-position: relative;
+  }
+
+  #lo-container {
+    margin-top: 500px;
+  }
 }
