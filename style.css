@@ -277,6 +277,7 @@ footer {
     margin-top: 15%;
     max-width: 60%;
     align-items: left;
+    margin-right: auto;
 }
 
 #right-box {
@@ -289,35 +290,59 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .emfimage {
-    max-width: 10%;
+    max-width: 12%;
     height: auto;
+    position: absolute;
+    right: 50px;
+    top: 200px;
 }
 
 .sb-image {
-    max-width: 10%;
+    max-width: 15%;
     height: auto;
+    position: absolute;
+    left: 50px;
+    top: 200px;
+}
+
+.estes-image {
+    max-width: 25%;
+    height: auto;
+    position: absolute;
+    left: 10px;
+    top: 540px;
 }
 
 .sb-flex-image {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .rp-image {
-    max-width: 10%;
+    max-width: 20%;
     height: auto;
-    margin: 20px;
+    position: absolute;
+    right: 50px;
+    top: 150px
 }
 
+.rp-flex-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
 
 /* SOURCES */
 
 #s-container {
-     max-width: 50%;
+    max-width: 50%;
     margin: 0 auto;
     padding: 0, 100px, 0;
     text-align: center;
@@ -336,16 +361,51 @@ footer {
 /* LOCATIONS */
 
 .background-image-locations {
-    background-image: url(catskills.png);
-    background-repeat: no-repeat;
-    background-position: right 1%;
+    background-image: 
+        url(catskills.png),
+        url(locations-hinsdale.png),
+        url(locations-kreischer.png),
+        url(locations-saratoga.png),
+        url(locations-shanley.png);
+    background-repeat: 
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat;
+    background-position: 
+        right 40px,
+        center 500px,
+        center 2165px,
+        center 4065px,
+        center 5655px;
     background-origin: content-box;
-    background-size: 60%;
+    background-size: 
+        60%,
+        50%,
+        50%,
+        50%,
+        50%;
+}
+
+#lo-container {
+    max-width: 50%;
+    margin: 630px 5% auto;
+    padding: 0, 100px, 0;
+
+}
+
+.lo-info {
+    margin-top: 50px;
+}
+
+.lo-container2 {
+    margin-top: 580px;
 }
 
 .youtube {
     width: 100%;
-    margin: 50px 0;
+    margin: 20px 0;
 }
 
 
@@ -369,5 +429,9 @@ footer {
     flex-direction: column;
     display: grid;
     justify-content: center;
+  }
+
+  .rp-flex-images {
+    flex-direction: column;
   }
 }
