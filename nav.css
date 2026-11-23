@@ -96,7 +96,8 @@
 .mobile-menu {
   display: none;
   position: absolute;
-  top: 50px;
+  background-image: linear-gradient( 135deg, var(--darkpurple), #241833, #2d1f42);
+  top: 80px;
   left: 0;
   height: calc(100vh - 50px);
   width: 100%;
