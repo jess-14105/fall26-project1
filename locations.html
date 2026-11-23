@@ -12,20 +12,31 @@
 
 <body class="background-image-locations">
     <header class="navbar">
-   <nav> 
-    <a href="index.html">
-        <img src="xplr.png" alt="Home" id="nav-logo"></a>
+      <div>
+        <a href="index.html">
+            <img src="xplr.png" alt="Home" id="nav-logo">
+        </a>
+      </div>
+      
+      <nav>
+        <ul id="nav-links">
+            <li><a href="equipment.html">equipment</a></li>
+            <li><a href="locations.html">locations</a></li>
+            <li><a href="sources.html">sources</a></li>
+        </ul>
     </nav>
-    <div>
-        <nav>
-            <ul id="nav-links">
-                <li><a href="equipment.html">equipment</a></li>
-                <li><a href="locations.html">locations</a></li>
-                <li><a href="sources.html">sources</a></li>
-            </ul>
-        </nav>
-    </div>
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+            <li><a href="equipment.html">equipment</a></li>
+            <li><a href="locations.html">locations</a></li>
+            <li><a href="sources.html">sources</a></li>
+        </ul>
+      </div>
     </header>
+    
     <main>
         <!--𝗠𝗮𝗶𝗻 𝗖𝗼𝗻𝘁𝗲𝗻𝘁-->
         <h1>locations</h1>
