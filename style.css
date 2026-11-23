@@ -391,60 +391,62 @@ footer {
 .background-image-locations {
     background-image: 
         url(catskills2.png),
-        url(locations-hinsdale.png),
-        url(locations-kreischer.png),
-        url(locations-saratoga.png),
-        url(locations-shanley.png),
         linear-gradient( 135deg, var(--darkpurple), #241833, #2d1f42);
     background-repeat: 
-        no-repeat,
-        no-repeat,
-        no-repeat,
         no-repeat,
         no-repeat;
     background-position: 
         right 40px,
-        center 500px,
-        center 2165px,
-        center 4065px,
-        center 5655px,
         center;
     background-origin: content-box;
     background-size: 
         60%,
-        50%,
-        50%,
-        50%,
-        50%,
         cover;
 }
 
 #lo-container {
     max-width: 50%;
-    margin: 630px 5% auto;
+    margin: 0px, 5% auto;
     padding: 0, 100px, 0;
 
+}
+
+.h2-image-header {
+    display: grid;
+    place-items: left;
+    width: 100%;
+    align-items: flex-end;
+    margin-top: 300px;
+}
+
+.h2-image-header img,
+.h2-image-header h2 {
+    grid-area: 1 / 1;
+}
+
+.h2-image-header img {
+    display: block;
+}
+
+.h2-image-header h2 {
+    z-index: 1;
+}
+
+.locations-images {
+    width: 100%;
 }
 
 .lo-info {
     margin-top: 50px;
 }
 
-.lo-container2 {
-    margin-top: 580px;
-}
-
-.youtube {
-    width: 100%;
-    margin: 20px 0;
-}
 
 
  /* flex layout, then @media for mobile */
 
 @media only screen and (max-width: 700px) {
     p {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     img {
@@ -453,6 +455,10 @@ footer {
 
     footer {
         text-align: center;
+    }
+
+    #hp-container, #eq-container, #s-container, #lo-container {
+        max-width: 80%;
     }
 
     .home-images {
@@ -498,10 +504,7 @@ footer {
 
   .emfimage {
     min-width: 300px;
-    position: absolute;
-    z-index: -1;
-    top: 0px;
-    left: 210px;
+    position: flex;
 
   }
 
@@ -547,7 +550,7 @@ footer {
     background-position: relative;
   }
 
-  #lo-container {
-    margin-top: 500px;
+  .h2-image-header {
+    margin-top: 120px;
   }
 }
